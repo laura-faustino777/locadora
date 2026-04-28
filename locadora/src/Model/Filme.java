@@ -37,9 +37,12 @@ public class Filme {
     }
 
     public void exibadetalhes(){
+        System.out.println(getTitulo() + " "+ getGenero() + "  " + getValorAluguel());
 
     }
     public void AplicarDesconto() {
+            double desc = -10;
 
+        System.out.println("valor com desconto sera: "  + desc);
     }
 }

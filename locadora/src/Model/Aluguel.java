@@ -5,20 +5,22 @@ public class Aluguel {
      private Cliente cliente;
      public Filme filme;
      private int dias;
-     private String resumo;
 
-    public Aluguel(Cliente cliente, Filme filme, int dias, String resumo) {
+
+    public Aluguel(Cliente cliente, Filme filme, int dias) {
         this.cliente = cliente;
         this.filme = filme;
         this.dias = dias;
-        this.resumo = resumo;
+
     }
 
     public double calcularValor(){
         double valor = dias * 2;
-        if(dias > 29){
-            valor = valor -10;
+        if(dias > 49){
+            valor = valor -19;
+
         }
+        System.out.println("o total é:" + valor);
         return valor;
     }
 
@@ -46,10 +48,9 @@ public class Aluguel {
         this.dias = dias;
     }
 
-    public String getResumo() {
-        return resumo;
-    }
+
 }
+
 
 
 
